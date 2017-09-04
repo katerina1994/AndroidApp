@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GameApplication</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_game_one">GameOne</string>
+    <string name="game_path_first">file:///android_asset/html_games/game1/html/index.html</string>
+    <string name="game_path_second">file:///android_asset/html_games/game2/game/index.html</string>
+    <string name="mainText">Просто приветствие на главном экране.</string>
+</resources>
