@@ -17,15 +17,15 @@ public abstract class BaseGame extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.screen_game_one, container,
+        View rootView = inflater.inflate(R.layout.screen_game, container,
                 false);
         Activity a = getActivity();
         if(a != null) a.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
-        WebView gameOne = (WebView) rootView.findViewById(R.id.webViewGameOne);
+        WebView gameOne = (WebView) rootView.findViewById(R.id.webViewGame);
         gameOne.getSettings().setUseWideViewPort(true);
         gameOne.setInitialScale(1);
-        gameOne.getSettings().setJavaScriptEnabled(true)
+        gameOne.getSettings().setJavaScriptEnabled(true);
         gameOne.getSettings().setAllowUniversalAccessFromFileURLs(true);
         gameOne.loadUrl(getGamePath());
         return rootView;
