@@ -25,7 +25,8 @@ public abstract class BaseGame extends Fragment {
         WebView gameOne = (WebView) rootView.findViewById(R.id.webViewGameOne);
         gameOne.getSettings().setUseWideViewPort(true);
         gameOne.setInitialScale(1);
-        gameOne.getSettings().setJavaScriptEnabled(true);
+        gameOne.getSettings().setJavaScriptEnabled(true)
+        gameOne.getSettings().setAllowUniversalAccessFromFileURLs(true);
         gameOne.loadUrl(getGamePath());
         return rootView;
     }
